@@ -1,0 +1,28 @@
+.line {
+    stroke-width: 1;
+    stroke: grey;
+}
+
+.circle {
+    stroke-width: 1;
+    stroke: red;
+    fill: none;
+}
+
+.rect {
+    stroke-width: 1;
+    stroke: steelblue;
+    fill: none;
+}
+
+.triangle {
+    stroke-width: 1;
+    stroke: green;
+    fill: none;
+}
+
+.svg {
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    overflow: visible;
+}
