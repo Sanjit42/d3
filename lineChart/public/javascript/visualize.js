@@ -3,6 +3,7 @@ const HEIGHT = 400;
 const MARGIN = 30;
 
 var data = [{x: 0, y: 5}, {x: 1, y: 9}, {x: 2, y: 7}, {x: 3, y: 5}, {x: 4, y: 3}, {x: 6, y: 4}, {x: 7, y: 2}, { x: 8, y: 3}, {x: 9, y: 2}];
+var sinValue =[0,1,2,3,4,5,6,7,8,9];
 
 var translate = function (x, y) {
     return "translate(" + x + "," + y + ")";
@@ -49,7 +50,7 @@ var loadChart = function () {
         .curve(d3.curveStepAfter);
 
     var sine =  d3.line()
-        .x(getCXValue)
+        .x(getSinCXValue)
         .y(getSinCYValue)
         .curve(d3.curveStepAfter);
 
@@ -58,11 +59,11 @@ var loadChart = function () {
         .classed('line', true);
 
     g.append("path")
-        .attr("d", sine(data))
+        .attr("d", sine(sinValue))
         .classed('sine-line-path',true);
 
     generateCircles(getCXValue, getCYValue, data, g);
-    generateCircles(getCXValue, getSinCYValue, data, g);
+    generateCircles(getSinCXValue, getSinCYValue, sinValue, g);
 
 };
 
@@ -74,7 +75,11 @@ var getCXValue = function (q) {
     return xScale(q.x / 10);
 };
 
+var getSinCXValue = function (q) {
+    return xScale(q / 10);
+};
+
 var getSinCYValue = function (q) {
-    return yScale(Math.sin(q.x) / 10 + 0.5);
+    return yScale(Math.sin(q) / 10 + 0.5);
 };
 window.onload = loadChart;

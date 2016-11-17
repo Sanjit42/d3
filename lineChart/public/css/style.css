@@ -4,11 +4,13 @@
 }
 
 .line {
+    stroke-width:2;
     stroke: darkred;
     fill: none;
 }
 
 .sine-line-path {
+    stroke-width:2;
     stroke: darkblue;
     fill: none;
 }
