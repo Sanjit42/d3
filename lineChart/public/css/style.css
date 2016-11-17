@@ -3,6 +3,16 @@
     fill: none;
 }
 
+.line {
+    stroke: darkred;
+    fill: none;
+}
+
+.sine-line-path {
+    stroke: darkblue;
+    fill: none;
+}
+
 circle{
     stroke: steelblue;
     fill: white;

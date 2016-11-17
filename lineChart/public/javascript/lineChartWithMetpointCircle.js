@@ -38,7 +38,7 @@ var loadChart = function () {
     var svg = d3.select('.container').append('svg')
         .attr('width', WIDTH)
         .attr('height', HEIGHT);
-    
+
     var xAxis = d3.axisBottom(xScale).ticks(10);
     var yAxis = d3.axisLeft(yScale).ticks(10);
 
