@@ -3,7 +3,7 @@ var createChart = function () {
     var svg = d3.select('body').append('svg')
         .attr('width', 600)
         .attr('height', 100)
-        .attr("class", "svg")
+        .attr("class", "svg");
 
     svg.append('line')
         .attr('x1', 10)
