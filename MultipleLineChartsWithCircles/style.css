@@ -1,0 +1,21 @@
+.line-path {
+    stroke: steelblue;
+    fill: none;
+}
+
+.line {
+    stroke-width:2;
+    stroke: darkred;
+    fill: none;
+}
+
+.sine-line-path {
+    stroke-width:2;
+    stroke: darkblue;
+    fill: none;
+}
+
+circle{
+    stroke: steelblue;
+    fill: white;
+}
