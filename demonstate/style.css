@@ -1,0 +1,25 @@
+div {
+    padding-top: 20px;
+    /*font-family: monospace;*/
+    font-style: oblique;
+    font-variant: small-caps;
+}
+
+.value {
+    margin-left: 300px;
+    text-align: left;
+}
+
+.title {
+    position: absolute;
+}
+
+button {
+    background-color: lightgrey;
+    border-radius: 5px;
+    border-color: lightgray;
+}
+
+/*button {*/
+    /*border-radius: 15px;*/
+/*}*/

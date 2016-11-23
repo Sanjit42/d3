@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Demonstate</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<center><h1>Demonstate</h1></center>
+<script type="text/javascript" src="d3.v4.min.js"></script>
+<script type="text/javascript" src="visualize.js"></script>
+
+<div class="userInterface">
+	Enter numbers:
+	<input type="text" name="numberValue" id="numberValue">
+	<button onclick="dataStore()">Submit</button>
+</div>
+<div class="container"></div>
+<div class="button">
+	sort by:
+	<button type="button" onclick="sortByMin()">Min</button>
+	<button type="button" onclick="sortByMax()">Max</button>
+	<button type="button" onclick="sortByExtent()">Extent</button>
+	<button type="button" onclick="sortBySum()">Sum</button>
+	<button type="button" onclick="sortByMean()">Mean</button>
+	<button type="button" onclick="sortByMedian()">Median</button>
+	<button type="button" onclick="sortByQuantile()">Quantile</button>
+	<button type="button" onclick="sortByVariance()">Variance</button>
+	<button type="button" onclick="sortByDeviation()">Deviation</button>
+</div>
+</body>
+</html>
+
+
+
+
+
