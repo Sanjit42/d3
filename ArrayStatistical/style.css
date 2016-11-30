@@ -1,0 +1,37 @@
+body{
+    font-family: sans-serif;
+}
+
+h1{
+    text-align: center;
+}
+
+.userInterface {
+    width:300px;
+    margin: auto;
+    margin-top: 70px;
+}
+
+div{
+    margin-top: 20px;
+    text-align: center;
+}
+
+button {
+    height: 30px;
+    width: 70px;
+    font-size: 13px;
+    margin-left: 10px;
+}
+
+form{
+    margin-bottom: 20px;
+}
+
+input{
+    height: 25px;
+    width: 200px;
+    text-align: center;
+    font-size: 15px;
+    background-color: white;
+}
